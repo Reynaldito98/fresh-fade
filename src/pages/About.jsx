@@ -2,7 +2,7 @@ import { useLanguage } from "../context/LanguageContext";
 export default function About() {
   const { lang } = useLanguage();
   return (
-    <div className="page">
+    <div className="page__about">
       <h2>{lang === "en" ? "About Us" : "Sobre Nosotros"}</h2>
       <p>
         {lang === "en"

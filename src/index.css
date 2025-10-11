@@ -76,7 +76,7 @@ nav button:hover {
 }
 
 .hero__blur {
-  background: url("https://images.unsplash.com/photo-1633121050918-ab208f1508b7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGJhcmJlcnNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900") no-repeat center center/cover;
+  background: url("https://images.unsplash.com/photo-1633121050918-ab208f1508b7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGJhcmJlcnNob3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=900") no-repeat center center cover;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -218,6 +218,29 @@ form button:hover {
   box-shadow: 0px 0px 10px rgba(0px, 0px, 10px, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   filter: brightness(90%);
+}
+
+/* About */
+.page__about {
+  padding: 3rem 2rem;
+  margin: auto;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1439923274069-a6f070db0c99?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhY2tncm91bmRzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=900") no-repeat center center cover;
+}
+
+.page__about h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+}
+
+.page__about ul {
+  list-style: none;
+}
+
+.page__about li {
+  margin: 0.5rem 0;
 }
 
 /* Footer */
