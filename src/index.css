@@ -250,6 +250,18 @@ form button:hover {
   margin: 0.5rem 0;
 }
 
+.page__about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 /* Footer */
 footer {
   background: #000;
