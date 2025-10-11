@@ -248,6 +248,8 @@ form button:hover {
 
 .page__about li {
   margin: 0.5rem 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .page__about_container {
