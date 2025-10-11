@@ -257,9 +257,10 @@ form button:hover {
 }
 
 .page__about img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%; 
+  gap: 50px;
 }
 
 /* Footer */
