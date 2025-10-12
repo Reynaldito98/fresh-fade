@@ -182,8 +182,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  gap: 1.60rem;
   margin-top: 3rem;
 }
 
@@ -221,6 +220,19 @@ form a {
 
 form a:hover {
   background: #d93a3a;
+}
+
+form span {
+  color: red;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  display: block;
+  position: absolute;
+}
+
+form fieldset {
+  border: none;
 }
 
 /* Services */

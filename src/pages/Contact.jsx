@@ -1,8 +1,59 @@
 import { useLanguage } from "../context/LanguageContext";
+import { useState, useEffect } from "react";
 
 
 export default function Contact() {
   const { lang } = useLanguage();
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const [nameValid, setNameValid] = useState(false);
+  const [phoneValid, setPhoneValid] = useState(false);
+  const [messageValid, setMessageValid] = useState(false);
+  const [nameErrorMessage, setNameErrorMessage] = useState('');
+  const [phoneErrorMessage, setPhoneErrorMessage] = useState('');
+  const [messageErrorMessage, setMessageErrorMessage] = useState('');
+
+
+  function handleNameChange(evt) {
+    setName(evt.target.value);
+    
+    if(evt.target.checkValidity()){
+      setNameValid(true);
+      setNameErrorMessage('');
+    } else{
+      setNameValid(false);
+      setNameErrorMessage(evt.target.validationMessage);
+    }
+    console.log(isDisabled);
+  }
+
+  function handlePhoneChange(evt) {
+    setPhone(evt.target.value);
+    if(evt.target.checkValidity()){
+      setPhoneValid(true);
+      setPhoneErrorMessage('');
+    } else{
+      setPhoneValid(false);
+      setPhoneErrorMessage(evt.target.validationMessage);
+    };
+
+    console.log(isDisabled);
+  }
+
+  function handleMessageChange(evt) {
+    setMessage(evt.target.value);
+    if(evt.target.checkValidity()){
+      setMessageValid(true);
+      setMessageErrorMessage('');
+    } else{
+      setMessageValid(false);
+      setMessageErrorMessage(evt.target.validationMessage);
+    };
+
+    console.log(isDisabled);
+  }
+
   return (
     <div className="page" id="contact">
       <h2>{lang === "en" ? "Contact Us" : "Contáctanos"}</h2>
@@ -15,10 +66,21 @@ export default function Contact() {
       </div>
 
       <form>
-        <input type="text" placeholder={lang === "en" ? "Your Name" : "Tu Nombre"} />
-        <input type="tel" placeholder={lang === "en" ? "Phone number" : "Numero de telefono"}/>
-        <textarea placeholder={lang === "en" ? "Message" : "Mensaje"} />
-        <a href="mailto:reynaldoperezpauli6@gmail.com?subject=Appointment%20Request&body=Hello" target="_blank">{lang === "en" ? "Send" : "Enviar"}</a>
+        <fieldset>
+          <input type="text" placeholder={lang === "en" ? "Your Name" : "Tu Nombre"} onChange={handleNameChange} minLength="3"/>
+          <span>{nameErrorMessage}</span>
+        </fieldset>
+
+        <fieldset>
+          <input type="number" placeholder={lang === "en" ? "Phone number" : "Numero de telefono"} onChange={handlePhoneChange} minLength="8"/>
+          <span>{phoneErrorMessage}</span>
+        </fieldset>
+        
+        <fieldset>
+          <textarea placeholder={lang === "en" ? "Message" : "Mensaje"} onChange={handleMessageChange} minLength="4"/>
+          <span>{messageErrorMessage}</span>
+        </fieldset>
+        <a href={nameValid && phoneValid && messageValid?"mailto:reynaldoperezpauli6@gmail.com?subject=Appointment%20Request&body=Hello":undefined} target="_blank">{lang === "en" ? "Send" : "Enviar"}</a>
       </form>
     </div>
   );
