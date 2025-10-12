@@ -203,7 +203,7 @@ form textarea {
   height: 200px;      
 }
 
-form button {
+form a {
   background: #f04c4c;
   color: white;
   border: none;
@@ -215,9 +215,10 @@ form button {
   width: 900px;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 
-form button:hover {
+form a:hover {
   background: #d93a3a;
 }
 
