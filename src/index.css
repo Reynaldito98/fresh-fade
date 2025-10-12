@@ -216,6 +216,7 @@ form a {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  text-decoration: none;
 }
 
 form a:hover {
