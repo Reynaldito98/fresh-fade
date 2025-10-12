@@ -238,6 +238,7 @@ form button:hover {
 }
 
 .page__services ul {
+  justify-content: center;
   list-style: none;
   margin-top: 60px;
   display: grid;
