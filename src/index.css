@@ -9,7 +9,7 @@ body {
   line-height: 1.6;
   color: #333;
   min-width: 100vw;
-  border: 1px solid red;
+  overflow: hidden;
 }
 
 /* Navbar */
