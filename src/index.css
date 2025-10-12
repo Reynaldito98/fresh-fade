@@ -323,7 +323,7 @@ footer {
   nav {
     flex-direction: column;
     gap: 1rem;
-    height: 160px;
+    height: 180px;
   }
 
   .hero h1 {
