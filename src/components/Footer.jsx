@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
       <footer>
-        <p>{lang==="en" ? "© 2025 Fresh Fade Society Site by Reynaldo Perez Pauli. All Rights Reserved." : "© 2025 Fresh Fade Society Site por Reynaldo Perez Pauli. Todods los Derechos Reservados."}</p>
+        <p>{lang==="en" ? "© 2025 Fresh Fade Society Site by Reynaldo Perez Pauli. All Rights Reserved." : "© 2025 Fresh Fade Society Site por Reynaldo Perez Pauli. Todos los Derechos Reservados."}</p>
       </footer>
     );
   }
