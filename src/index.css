@@ -387,7 +387,7 @@ footer {
 
   form input,
   form textarea,
-  form button {
+  form a {
     width: 350px;
  }
 }
