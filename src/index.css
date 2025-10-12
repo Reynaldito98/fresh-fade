@@ -8,6 +8,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
+  min-width: 100vw;
+  border: 1px solid red;
 }
 
 /* Navbar */
@@ -20,6 +22,7 @@ nav {
   padding: 1rem 2rem;
   height: 100px;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  width: 100%;
 }
 
 nav h1 {
@@ -66,10 +69,11 @@ nav button:hover {
   color: white;
   padding: 0 1rem;
   position: relative;
+  width: 100%;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
   font-family: 'Roboto Slab', sans-serif;
@@ -83,7 +87,7 @@ nav button:hover {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100vw;
+  width: 100%;
   height: 89vh;
   z-index: -100;
   filter: brightness(50%);
@@ -123,6 +127,7 @@ nav button:hover {
   margin: auto;
   height: 100vh;
   background-image: linear-gradient(to right, #f4f4f4, #ede6e6, #d7d2d2);
+  width: 100%;
 }
 
 .page h2 {
@@ -228,7 +233,7 @@ form button:hover {
   padding: 3rem 2rem;
   margin: auto;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url("https://plus.unsplash.com/premium_photo-1668900831790-d9fbeb133604?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxiYWNrZ3JvdW5kc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900");
   background-repeat: no-repeat;
   background-position: center;
@@ -253,10 +258,10 @@ form button:hover {
 }
 
 .page__about_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .page__about img {
@@ -280,6 +285,8 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  
+
   nav {
     flex-direction: column;
     gap: 1rem;

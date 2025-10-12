@@ -8,7 +8,7 @@ const translations = {
     about: "About",
     contact: "Contact",
     book_now: "Book now!",
-    welcome: "Welcome to Fresh Fade Society LLC.",
+    welcome: "FRESH FADE SOCIETY LLC.",
     subtitle: "We offer the best service in hair cutting made by a professional barber to give you the best experience ever in the world of barbering and men hairstyling.",
   },
   es: {
@@ -17,7 +17,7 @@ const translations = {
     about: "Nosotros",
     contact: "Contacto",
     book_now: "Agenda ya!",
-    welcome: "Bienvenido a Fresh Fade Society LLC.",
+    welcome: "FRESH FADE SOCIETY LLC.",
     subtitle: "Ofrecemos el mejor servicio de barberia a manos de un profesional para brindarte la mejor experiencia en el mundo del corte y estilizado para caballeros.",
   }
 };

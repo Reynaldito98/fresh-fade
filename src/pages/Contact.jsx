@@ -4,6 +4,11 @@ export default function Contact() {
   return (
     <div className="page">
       <h2>{lang === "en" ? "Contact Us" : "Contáctanos"}</h2>
+
+      <div>
+
+      </div>
+      
       <form>
         <input type="text" placeholder={lang === "en" ? "Your Name" : "Tu Nombre"} />
         <input type="email" placeholder="Email" />
