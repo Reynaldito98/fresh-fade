@@ -4,11 +4,17 @@
   box-sizing: border-box;
 }
 
-body, html {
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   min-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+html {
   overflow-x: hidden;
 }
 
@@ -314,4 +320,46 @@ footer {
   .hero__blur {
     height: 70vh;
   }
+
+  .page h2 {
+    font-size: 3rem;
+  }
+
+  .page__services h2 {
+    font-size: 3rem;
+  }
+
+  .page__about h2 {
+    font-size: 3rem;
+  }
+
+  .page__services ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .page__services img {
+    width: 300px;
+  }
+
+  .page__about_container {
+    flex-direction: column;
+  }
+
+  .page__about {
+    height: fit-content;
+  }
+
+  .page__about img {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 350px;
+ }
 }
