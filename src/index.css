@@ -304,6 +304,6 @@ footer {
 
 @media (max-width: 550px) {
    .hero p {
-    max-width: 500px;
+    max-width: 330px;
   }
 }
