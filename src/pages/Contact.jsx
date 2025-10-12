@@ -16,7 +16,7 @@ export default function Contact() {
 
       <form>
         <input type="text" placeholder={lang === "en" ? "Your Name" : "Tu Nombre"} />
-        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder={lang === "en" ? "Phone number" : "Numero de telefono"}/>
         <textarea placeholder={lang === "en" ? "Message" : "Mensaje"} />
         <a href="mailto:reynaldoperezpauli6@gmail.com?subject=Appointment%20Request&body=Hello" target="_blank">{lang === "en" ? "Send" : "Enviar"}</a>
       </form>
