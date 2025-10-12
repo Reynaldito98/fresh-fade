@@ -306,4 +306,12 @@ footer {
    .hero p {
     max-width: 330px;
   }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero__blur {
+    height: 60vh;
+  }
 }
