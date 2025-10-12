@@ -16,7 +16,7 @@ export default function Contact() {
 
 
   function handleNameChange(evt) {
-    setName(evt.target.value);
+    setName(evt.target.value.split(' ').join('%20'));
     
     if(evt.target.checkValidity()){
       setNameValid(true);
@@ -42,7 +42,7 @@ export default function Contact() {
   }
 
   function handleMessageChange(evt) {
-    setMessage(evt.target.value);
+    setMessage(evt.target.value.split(' ').join('%20'));
     if(evt.target.checkValidity()){
       setMessageValid(true);
       setMessageErrorMessage('');
@@ -51,7 +51,7 @@ export default function Contact() {
       setMessageErrorMessage(evt.target.validationMessage);
     };
 
-    console.log(isDisabled);
+    console.log(evt.target.value.split(' ').join('%20'));
   }
 
   return (
@@ -80,7 +80,7 @@ export default function Contact() {
           <textarea placeholder={lang === "en" ? "Message" : "Mensaje"} onChange={handleMessageChange} minLength="4"/>
           <span>{messageErrorMessage}</span>
         </fieldset>
-        <a href={nameValid && phoneValid && messageValid?"mailto:reynaldoperezpauli6@gmail.com?subject=Appointment%20Request&body=Hello":undefined} target="_blank">{lang === "en" ? "Send" : "Enviar"}</a>
+        <a href={nameValid && phoneValid && messageValid?`mailto:reynaldoperezpauli6@gmail.com?subject=Appointment%20Request&body=Hello%20my%20name%20is%20${name}%20and%20my%20phone%20number%20is%20${phone}.%20%20%20${message}`:undefined} target="_blank">{lang === "en" ? "Send" : "Enviar"}</a>
       </form>
     </div>
   );
