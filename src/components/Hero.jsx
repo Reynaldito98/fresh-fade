@@ -3,7 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 export default function Hero() {
   const { t } = useLanguage();
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__blur">
 
       </div>

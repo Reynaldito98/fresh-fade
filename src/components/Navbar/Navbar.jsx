@@ -8,10 +8,10 @@ export default function Navbar() {
     <nav>
       <h1>FreshFade</h1>
       <div>
-        <Link to="/">{t.home}</Link>
-        <Link to="/services">{t.services}</Link>
-        <Link to="/about">{t.about}</Link>
-        <Link to="/contact">{t.contact}</Link>
+        <a href="#home">{t.home}</a>
+        <a href="#services">{t.services}</a>
+        <a href="#about">{t.about}</a>
+        <a href="#contact">{t.contact}</a>
       </div>
       <button onClick={() => setLang(lang === "en" ? "es" : "en")}>
         {lang === "en" ? "ES" : "EN"}

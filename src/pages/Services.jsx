@@ -7,7 +7,7 @@ import beard from "../assets/beard.jpg";
 export default function Services() {
   const { lang } = useLanguage();
   return (
-    <div className="page__services">
+    <div className="page__services" id="services">
       <h2>{lang === "en" ? "Our Services" : "Nuestros Servicios"}</h2>
       <ul>
         <li>
@@ -24,7 +24,7 @@ export default function Services() {
           <img src={beard} alt="beard trim"></img>
           <p>💈 {lang === "en" ? "Beard Trims" : "Arreglo de Barba"}</p>
         </li>
-      </ul>
+      </ul> 
     </div>
   );
 }
