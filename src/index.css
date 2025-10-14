@@ -294,7 +294,7 @@ form fieldset {
   height: 260px;
   border-radius: 10px;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 10px rgba(0px, 0px, 10px, 0.5);
+  box-shadow: 0px 0px 10px rgba(0px, 0px, 20px, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   filter: brightness(90%);
 }
@@ -303,7 +303,7 @@ form fieldset {
 .page__about {
   padding: 3rem 2rem;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url("https://plus.unsplash.com/premium_photo-1668900831790-d9fbeb133604?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHxiYWNrZ3JvdW5kc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=900");
   background-repeat: no-repeat;
@@ -350,7 +350,9 @@ form fieldset {
 }
 
 .page__about p {
-  max-width: 650px; 
+  max-width: 650px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; 
 }
 
 /* Footer */
@@ -372,11 +374,20 @@ footer {
   }
 
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 3.0rem;
   }
 
   .hero p {
     font-size: 1rem;
+    width: 700px;
+  }
+
+  .page__services ul {
+    grid-template-columns: 400px;
+  }
+
+  .page__about_container {
+    flex-direction: column;
   }
 }
 
@@ -413,10 +424,6 @@ footer {
 
   .page__services img {
     width: 300px;
-  }
-
-  .page__about_container {
-    flex-direction: column;
   }
 
   .page__about {
