@@ -1,3 +1,21 @@
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  }
+  75% {
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -116,10 +134,13 @@ nav button:hover {
   font-size: 24px;
   color: white;
   font-family: 'Roboto', sans-serif;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
+  animation-name: shadowAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 .hero button:hover {
@@ -167,6 +188,7 @@ nav button:hover {
   margin-bottom: 1rem;
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .page ul {
@@ -238,7 +260,7 @@ form fieldset {
 /* Services */
 .page__services {
   padding: 3rem 2rem;
-  margin: auto;
+  margin: 0px;
   min-height: 100vh;
   background-image: linear-gradient(to right, #e0dcdc, #dacece, #cecaca);
 }
@@ -248,7 +270,8 @@ form fieldset {
   margin-bottom: 1rem;
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
-  color:rgba(66, 63, 63, 0.5)
+  color:rgba(66, 63, 63, 0.5);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .page__services ul {
@@ -256,7 +279,8 @@ form fieldset {
   list-style: none;
   margin-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 40px;
 }
 
 .page__services li {
@@ -315,7 +339,14 @@ form fieldset {
   width: 450px;
   height: 450px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  filter: grayscale(100%); 
+  transition: 0.4s ease-in-out;
+}
+
+.page__about img:hover {
+  filter: grayscale(0%);
+  cursor: pointer; 
 }
 
 .page__about p {
