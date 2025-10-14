@@ -389,6 +389,16 @@ footer {
   .page__about_container {
     flex-direction: column;
   }
+
+  form input,
+  form textarea,
+  form a {
+    width: 700px;
+ }
+
+ .page {
+  height: fit-content;
+}
 }
 
 @media (max-width: 550px) {
@@ -418,7 +428,7 @@ footer {
 
   .page__services ul {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px;
     grid-gap: 20px;
   }
 
