@@ -1,5 +1,5 @@
 import { useLanguage } from "../context/LanguageContext";
-import {barber} from "../assets/barber.jpg";
+import barber from "../assets/barber.jpg";
 
 export default function About() {
   const { lang } = useLanguage();
