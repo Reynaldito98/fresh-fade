@@ -311,6 +311,16 @@ form fieldset {
   background-size: cover;
 }
 
+.page__about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.page__about_text p{
+  text-align: justify;
+}
+
 .page__about h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
